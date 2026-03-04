@@ -1,4 +1,8 @@
-# **Homework Assignment Reference:** [Manual Homework for Chunking Strategy](https://www.notion.so/Wyrd-3193ff2345d3803ea380c01413db3231?source=copy_link)
+# Wyrd Wiki RAG System
+
+**Homework Done:** [ Chunking Strategy](https://www.notion.so/Wyrd-3193ff2345d3803ea380c01413db3231?source=copy_link)
+
+## click abouve link to see which chunking strategy i chose and why
 
 ## About This Project
 A highly optimized local Retrieval-Augmented Generation (RAG) system custom-built for Wyrd Media Labs. This RAG natively understands the Wyrd brand, enforcing strict protections against "Dead Language" and preventing persona-driven hallucinations. 
@@ -43,3 +47,7 @@ This RAG implementation uses a customized **structural-semantic hybrid** chunkin
    We then pass each headed chunk through our semantic grouper. It splits the remaining text into raw sentences. Each sentence is embedded via `nomic-embed-text:v1.5` and we measure the cosine distance between neighboring concepts.
    - If the distance between two sentences exceeds a configured topic-drift threshold, a split is performed automatically. 
    - This ensures that topics are grouped by semantic coherence, preventing the "Temporal Context Blending" that plagues naive fixed-size token chunkers.
+
+
+   # **Homework Assignment Reference:** [Homework for Chunking Strategy](https://www.notion.so/Wyrd-3193ff2345d3803ea380c01413db3231?source=copy_link)
+
